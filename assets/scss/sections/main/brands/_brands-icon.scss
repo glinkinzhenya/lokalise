@@ -1,0 +1,19 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.brands-icon {
+    display: flex;
+    margin-bottom: 94px;
+    gap: 99px;
+
+    flex-wrap: wrap;
+ justify-content: center;
+  
+
+    @include sm {
+        margin-bottom: 50px;
+        gap: 50px;
+    }
+
+    &__image {}
+}
