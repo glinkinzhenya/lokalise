@@ -1,0 +1,56 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.box-item2 {
+    min-height: 632px;
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+
+
+    &__contant {
+        &-title {
+            padding-top: 160px;
+            max-width: 493px;
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 60px;
+            padding-left: 138px
+        }
+
+
+        &-description {
+            max-width: 618px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            padding-left: 138px
+        }
+
+
+        &-action {
+            padding-bottom: 160px;
+            padding-top: 30px;
+            padding-left: 138px;
+
+            &-button {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
+
+
+    &__picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcf6df;
+
+
+        &-image {}
+
+    }
+}
