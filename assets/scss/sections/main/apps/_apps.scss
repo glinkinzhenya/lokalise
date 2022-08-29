@@ -1,0 +1,40 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.apps {
+    background-color: #fff8e4;
+    padding-bottom: 150px;
+}
+
+.apps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 57px 110px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include xxl {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px 50px;
+    }
+
+    @include md {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 30px 50px;
+    }
+}
+
+
+.apps-item {
+    padding-top: 120px;
+    margin-bottom: 58px;
+
+    &__text {
+        text-align: center;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+    }
+}

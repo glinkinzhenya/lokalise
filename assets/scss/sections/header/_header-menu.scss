@@ -9,6 +9,10 @@
     padding-bottom: $gap;
     gap: $gap;
 
+    @include md {
+        flex-direction: column
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -28,5 +32,9 @@
 
     &__actions {
         margin-left: auto;
+
+        @include md {
+            margin-left: 0px;
+        }
     }
 }

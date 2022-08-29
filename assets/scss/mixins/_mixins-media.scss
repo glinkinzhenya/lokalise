@@ -2,6 +2,13 @@
 
 $diff: 0.2px;
 
+@mixin xxl {
+  @media (max-width: ($xxl - $diff)) {
+    @content;
+  }
+}
+
+
 /* xl */
 @mixin xl-min {
   @media (min-width: $xl) {
