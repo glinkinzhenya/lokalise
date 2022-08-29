@@ -4,22 +4,20 @@
 .apps-box {
     min-height: 294px;
     width: 330px;
-        display: flex;
+    display: flex;
     flex-direction: column;
+
+    &__title {
+        text-align: center;
+
+    }
+
+    &__picture {
+        order: -1;
+        text-align: center;
+    }
+
+    &__image {}
+
+    &__description {}
 }
-
-.apps-box__title {
-    text-align: center;
-
-}
-
-.apps-box__picture {
-    order: -1;
-    text-align: center;
-}
-
-.apps-box__image {
-   
-}
-
-.apps-box__description {}
