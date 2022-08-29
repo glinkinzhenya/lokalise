@@ -1,0 +1,71 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.teams-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include xxl {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @include md {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+
+.teams-box {
+    display: flex;
+    flex-direction: column;
+
+    @include md {
+          text-align: center;
+          padding-bottom: 40px;
+        }
+
+
+    &__title {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+        padding-top: 50px;
+
+        @include md {
+                padding: 0px;
+            }
+    }
+
+    &__picture {
+        order: -1;
+        min-height: 205px;
+
+    }
+
+
+
+    &__description {
+        font-family: 'Graphik LC TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        padding-right: 20px;
+    }
+
+
+
+    &__actions {}
+}
+
+.teams-box__botton {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration-line: underline;
+}
+
+
+.teams-box__image {}
