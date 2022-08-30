@@ -1,0 +1,27 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.question {
+    background-color: #ff9c7d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question-title {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 75px;
+}
+
+.question-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.question-actions {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+}

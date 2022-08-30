@@ -17,7 +17,6 @@
         margin-bottom: 100px;
     }
 
-
     &__contant {
         &-title {
             padding-top: 160px;
@@ -32,7 +31,6 @@
             }
         }
 
-
         &-description {
             max-width: 618px;
             font-weight: 400;
@@ -44,7 +42,6 @@
                 padding-left: 0px;
             }
         }
-
 
         &-action {
             padding-bottom: 160px;
@@ -63,15 +60,12 @@
         }
     }
 
-
-
     &__picture {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #fcf6df;
         min-height: 500px;
-
 
         &-image {}
 
