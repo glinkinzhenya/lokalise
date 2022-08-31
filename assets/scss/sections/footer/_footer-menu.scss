@@ -1,0 +1,33 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.footer-menu {
+    display: flex;
+    gap: 115px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+    @include md {
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+.footer-menu__bloсk {
+    max-width: 187px;
+
+}
+
+.footer-menu__block-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.footer-menu__block-action {}
+
+.footer-menu__block-link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+}

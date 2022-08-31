@@ -1,0 +1,42 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.footer-case {}
+
+.footer-case__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.footer-case__picture {
+    margin-bottom: 40px;
+}
+
+.footer-case__image {}
+
+.footer-case__brand {}
+
+.footer-case__brand-image {}
+
+.footer-case__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-case__actions {
+    margin-bottom: 95px;
+
+    @include md {
+        margin-bottom: 0px;
+    }
+}
+
+.footer-case__actions-link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
