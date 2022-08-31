@@ -3,15 +3,16 @@
 
 .brands {
     background-color: #FF9C7D;
-}
 
-.brands-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1330px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 100px;
+
+    &-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1330px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 100px;
+    }
 }

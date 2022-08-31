@@ -214,6 +214,12 @@ a {
   padding-left: 20px;
 }
 
+.container-sm {
+  max-width: 1290px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .btn {
   display: block;
 
@@ -383,7 +389,6 @@ a {
 .brands {
   background-color: #ff9c7d;
 }
-
 .brands-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,7 +643,6 @@ a {
 
   background-color: #fff8e4;
 }
-
 .apps-container {
   display: grid;
 
@@ -687,7 +691,6 @@ a {
   margin-bottom: 180px;
   padding-top: 154px;
 }
-
 .teams-item {
   padding-bottom: 75px;
 }
@@ -751,7 +754,6 @@ a {
 
   background-color: #c9e8f2;
 }
-
 .face-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,7 +761,6 @@ a {
 
   gap: 85px;
 }
-
 .face-contant {
   padding-top: 40px;
 }
@@ -773,7 +774,7 @@ a {
   font-weight: 400;
   line-height: 25px;
 }
-.face-picture {
+.face .face-picture {
   padding-top: 52px;
 }
 
@@ -782,7 +783,6 @@ a {
 
   background-color: #dabc98;
 }
-
 .stars-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,7 +834,6 @@ a {
   font-weight: 600;
   line-height: 75px;
 }
-
 .integrations-description {
   max-width: 540px;
   margin-bottom: 25px;
@@ -845,7 +844,6 @@ a {
   font-weight: 400;
   line-height: 30px;
 }
-
 .integrations-picture {
   margin-bottom: 35px;
 }
@@ -864,13 +862,15 @@ a {
 
   background-color: #ff9c7d;
 }
-
 .question-title {
+  max-width: 784px;
+
+  text-align: center;
+
   font-size: 65px;
   font-weight: 600;
   line-height: 75px;
 }
-
 .question-description {
   margin-bottom: 55px;
 
@@ -878,7 +878,6 @@ a {
   font-weight: 400;
   line-height: 30px;
 }
-
 .question-actions {
   margin-bottom: 160px;
 
@@ -958,7 +957,7 @@ a {
 
   padding-top: 20px;
 
-  gap: 115px;
+  gap: 100px;
 }
 
 .footer-menu__bloсk {
@@ -1152,7 +1151,7 @@ a {
     -ms-flex-direction: column;
         flex-direction: column;
   }
-  .face-picture {
+  .face .face-picture {
     padding-top: 0;
   }
   .footer-primary {
@@ -1234,6 +1233,9 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .brands-title__text {
+    font-size: 30px;
+  }
   .box-item1 {
     margin-bottom: 100px;
   }
@@ -1263,5 +1265,11 @@ a {
   }
   .box-item4__contant-action {
     padding-left: 0;
+  }
+  .stars-picture2 {
+    text-align: center;
+  }
+  .stars-image2 {
+    max-width: 90%;
   }
 }

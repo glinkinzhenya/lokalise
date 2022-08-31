@@ -2,8 +2,9 @@
 @use '../../mixins' as *;
 
 .footer-menu {
+   
     display: flex;
-    gap: 115px;
+    gap: 100px;
     padding-top: 20px;
     flex-wrap: wrap;
 
