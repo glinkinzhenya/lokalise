@@ -3,32 +3,38 @@
 
 .question {
     background-color: #ff9c7d;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+    &-block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &__title {
+            font-weight: 600;
+            font-size: 65px;
+            line-height: 75px;
+            max-width: 784px;
+            text-align: center;
+
+            @include sm {
+                font-size: 40px;
+            }
+        }
 
 
-    &-title {
-        font-weight: 600;
-        font-size: 65px;
-        line-height: 75px;
-        max-width: 784px;
-        text-align: center;
-
-    }
-
-    &-description {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        margin-bottom: 55px;
-    }
+        &__description {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 55px;
+        }
 
 
-    &-actions {
-        font-weight: 600;
-        font-size: 17px;
-        line-height: 60px;
-        margin-bottom: 160px;
+        &__actions {
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 60px;
+            margin-bottom: 160px;
+        }
     }
 }

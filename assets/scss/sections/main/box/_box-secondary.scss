@@ -1,42 +1,67 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-
-.box-item3 {
+.box-secondary {
     min-height: 632px;
     display: grid;
-    grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 250px;
 
     @include lg {
         grid-auto-flow: initial;
         grid-template-columns: 1fr;
+        margin-bottom: 0px;
     }
 
     @include sm {
-        margin-bottom: 100px;
+        margin-bottom: 0px;
     }
 
     &__contant {
+        max-width: 493px;
+
+        @include lg {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         &-title {
             padding-top: 160px;
             max-width: 493px;
             font-weight: 600;
             font-size: 50px;
             line-height: 60px;
+            padding-left: 138px;
+
+            @include lg {
+                padding-left: 0px;
+                padding-top: 0px;
+            }
         }
 
         &-description {
-            max-width: 490px;
+            max-width: 618px;
             font-weight: 400;
             font-size: 20px;
             line-height: 30px;
+            padding-left: 138px;
+
+
+            @include lg {
+                padding-left: 0px;
+            }
         }
 
         &-action {
             padding-bottom: 160px;
             padding-top: 30px;
+            padding-left: 138px;
+
+            @include lg {
+                padding-left: 0px;
+                padding-bottom: 40px;
+            }
 
             &-button {
                 font-weight: 600;
@@ -50,10 +75,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fcf6df;
-        min-height: 500px;
 
-        &-image {}
+        &-image {
+            @include sm {
+                    max-width: 80%;
+                }
+        }
 
     }
 }

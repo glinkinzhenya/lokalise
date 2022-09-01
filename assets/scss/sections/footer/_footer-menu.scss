@@ -3,15 +3,22 @@
 
 .footer-menu {
    
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 100px;
     padding-top: 20px;
-    flex-wrap: wrap;
-
+    @include xl {
+        grid-template-columns: repeat(2, 1fr);
+        }
     @include md {
         justify-content: center;
         gap: 50px;
+ 
     }
+          @include sm {
+             
+              grid-template-columns: 1fr;
+          }
 }
 
 .footer-menu__bloсk {
