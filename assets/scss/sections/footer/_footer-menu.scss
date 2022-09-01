@@ -23,7 +23,13 @@
 
 .footer-menu__bloсk {
     max-width: 187px;
-
+@include sm {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+            display: block;
+}
 }
 
 .footer-menu__block-title {
