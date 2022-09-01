@@ -6,8 +6,6 @@
     min-height: 632px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    margin-bottom: 250px;
     gap: 20px;
 
     @include lg {

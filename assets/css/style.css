@@ -444,7 +444,6 @@ a {
   display: grid;
 
   min-height: 632px;
-  margin-bottom: 250px;
 
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
