@@ -7,6 +7,10 @@
     padding-top: 50px;
     padding-bottom: 45px;
     justify-content: space-between;
+@include xl {
+       padding-left: 20px;
+    }
+
 
     @include md {
         flex-direction: column;
@@ -41,10 +45,14 @@
 .footer-secondary__copyright {
     padding-right: 80px;
     @include md {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-right: 0px;
     }
+ @include sm {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
 }
 
 .footer-secondary__copyright-year {

@@ -10,8 +10,13 @@
         gap: 85px;
 
         @include md {
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
+            padding-top: 30px;
+            gap: 10px;
+        }
+
+        @include sm {
         }
     }
 

@@ -3,7 +3,9 @@
 
 .teams-container {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
+    gap: 70px 20px;
 
     @include xxl {
         grid-template-columns: repeat(2, 1fr);
@@ -20,6 +22,7 @@
 .teams-box {
     display: flex;
     flex-direction: column;
+    
 
     @include md {
         text-align: center;

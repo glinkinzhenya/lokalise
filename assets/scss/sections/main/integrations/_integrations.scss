@@ -8,7 +8,9 @@
     align-items: center;
     margin-bottom: 160px;
 
-    @include xl {}
+    @include md {
+        margin-bottom: 70px;
+    }
 
 
     &-title {

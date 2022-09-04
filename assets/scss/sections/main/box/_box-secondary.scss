@@ -25,15 +25,14 @@
     @include lg {
         grid-auto-flow: initial;
         grid-template-columns: 1fr;
-        // margin-bottom: 0px;
+        margin-bottom: 50px;
     }
 
     @include sm {
-        // margin-bottom: 0px;
+        margin-bottom: 30px;
     }
 
     &__contant {
-        // max-width: 493px;
 
         @include lg {
             text-align: center;
@@ -55,7 +54,7 @@
             }
 
             @include sm {
-            font-size: 40px;
+                font-size: 40px;
             }
 
             &--md {
@@ -90,23 +89,18 @@
         }
 
         &-action {
-
             padding-top: 30px;
             padding-bottom: 160px;
             padding-left: 107px;
 
             &--md {
-
                 padding-top: 22px;
                 padding-bottom: 123px;
-                ;
-
             }
 
             @include lg {
                 padding-left: 0px;
                 padding-bottom: 40px;
-
             }
 
             &-button {
@@ -122,37 +116,34 @@
         justify-content: center;
         align-items: center;
 
-
         &--md {
             background-color: $color-yellow;
             height: 575px;
             padding: 0 65px;
 
+            @include lg {
+                width: 80%;
+                margin: 0 auto;
+                padding: 0 40px;
+            }
+
             @include sm {
-                height: 400px;
-                    padding: 0 20px;
-                }
+                height: 300px;
+                padding: 0 20px;
+            }
         }
-
-
 
         &-image {
             width: 100%;
 
-            &--md {
-                // height: auto;
-                //     max-width: 100%;
-
-                // max-width: 500px;
-
-                // padding-top: 65px;
-
+            @include lg {
+                width: 80%;
+                margin: 0 auto;
             }
 
             @include sm {
-                // max-width: 80%;
+            width: 100%;
             }
         }
-
     }
 }

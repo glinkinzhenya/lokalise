@@ -3,7 +3,6 @@
 
 
 .box-first {
-    // min-height: 632px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -20,7 +19,6 @@
     }
 
     &__contant {
-        // max-width: 493px;
 
         @include lg {
             text-align: center;
@@ -34,6 +32,10 @@
             line-height: 60px;
             padding-top: 150px;
 
+            @include lg {
+                padding-top: 0;
+                font-size: 40px;
+            }
 
             @include sm {
                 padding-top: 0;
@@ -69,10 +71,13 @@
         justify-content: center;
         align-items: center;
 
-
-
         &-image {
             width: 100%;
+        }
+
+        @include lg{
+            width: 80%;
+            margin:0 auto;
         }
     }
 }

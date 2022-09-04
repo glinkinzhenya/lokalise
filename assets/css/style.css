@@ -570,6 +570,7 @@ a {
 .box-secondary__picture-image {
   width: 100%;
 }
+
 .apps {
   padding-bottom: 130px;
 
@@ -648,7 +649,9 @@ a {
 .teams-container {
   display: grid;
 
+  gap: 70px 20px;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
 .teams-box {
@@ -825,6 +828,8 @@ a {
 .question-block__description {
   margin-bottom: 55px;
 
+  text-align: center;
+
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -951,6 +956,8 @@ a {
 .footer-case__description {
   margin-bottom: 15px;
 
+  text-align: center;
+
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -1029,6 +1036,9 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
+  .footer-secondary {
+    padding-left: 20px;
+  }
   .footer-menu {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1062,10 +1072,21 @@ a {
 
     text-align: center;
   }
+  .box-first__contant-title {
+    padding-top: 0;
+
+    font-size: 40px;
+  }
+  .box-first__picture {
+    width: 80%;
+    margin: 0 auto;
+  }
   .box-secondary--md {
     margin-bottom: 450px;
   }
   .box-secondary {
+    margin-bottom: 50px;
+
     grid-auto-flow: initial;
     grid-template-columns: 1fr;
   }
@@ -1092,6 +1113,18 @@ a {
   .box-secondary__contant-action {
     padding-bottom: 40px;
     padding-left: 0;
+  }
+  .box-secondary__picture--md {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .box-secondary__picture-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer-primary {
+    padding-bottom: 38px;
   }
 }
 
@@ -1140,12 +1173,25 @@ a {
     align-items: center;
     -ms-flex-align: center;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+
+    padding-top: 30px;
+
+    gap: 10px;
   }
   .face .face-picture {
     padding-top: 0;
+  }
+  .stars {
+    margin-bottom: 10px;
+  }
+  .integrations {
+    margin-bottom: 70px;
+  }
+  .question-block__title {
+    font-size: 45px;
   }
   .footer-primary {
     -ms-flex-wrap: wrap;
@@ -1169,6 +1215,7 @@ a {
         flex-direction: column;
 
     max-width: none;
+    margin-right: 0;
   }
   .footer-secondary {
     -webkit-box-align: center;
@@ -1183,16 +1230,7 @@ a {
     margin-bottom: 20px;
   }
   .footer-secondary__copyright {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -ms-flex-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    padding-right: 0;
   }
   .footer-menu {
     -webkit-box-pack: center;
@@ -1253,12 +1291,25 @@ a {
   .box-secondary {
     padding-bottom: 60px;
   }
+  .box-secondary {
+    margin-bottom: 30px;
+  }
   .box-secondary__contant-title {
     font-size: 40px;
   }
   .box-secondary__picture--md {
-    height: 400px;
+    height: 300px;
     padding: 0 20px;
+  }
+  .box-secondary__picture-image {
+    width: 100%;
+  }
+  .apps-item__text {
+    font-size: 40px;
+  }
+  .teams {
+    margin-bottom: 90px;
+    padding-top: 40px;
   }
   .teams-item__text {
     font-size: 40px;
@@ -1269,8 +1320,17 @@ a {
   .stars-image2 {
     max-width: 90%;
   }
-  .question-block__title {
-    font-size: 40px;
+  .footer-secondary__copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .footer-menu {
     grid-template-columns: 1fr;

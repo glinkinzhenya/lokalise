@@ -5,6 +5,10 @@
     background-color: #dabc98;
     margin-bottom: 96px;
 
+    @include md {
+margin-bottom: 10px;
+    }
+
 
     &-container {
         display: flex;
