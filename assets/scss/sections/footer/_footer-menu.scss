@@ -2,35 +2,35 @@
 @use '../../mixins' as *;
 
 .footer-menu {
-   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
     padding-top: 20px;
-   
+
     @include xl {
         grid-template-columns: repeat(2, 1fr);
-        }
+    }
+
     @include md {
         justify-content: center;
         gap: 50px;
- 
     }
-          @include sm {
-             
-              grid-template-columns: 1fr;
-          }
+
+    @include sm {
+        grid-template-columns: 1fr;
+    }
 }
 
 .footer-menu__bloсk {
     max-width: 187px;
-@include sm {
-    display: flex;
+
+    @include sm {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-            display: block;
-}
+        display: block;
+    }
 }
 
 .footer-menu__block-title {

@@ -7,20 +7,16 @@
     padding-top: 52px;
     margin-bottom: 2px;
 
- @include lg {
+    @include lg {
         padding-bottom: 38px;
-  }
+    }
 
     @include md {
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 0px;
     }
- 
-
-      
 }
-
 
 .footer-primary__case {
     max-width: 300px;

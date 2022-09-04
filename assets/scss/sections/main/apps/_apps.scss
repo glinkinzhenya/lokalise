@@ -2,9 +2,8 @@
 @use "../../../mixins" as *;
 
 .apps {
-    background-color: #fff8e4;
+    background-color: $color-bg-yellow;
     padding-bottom: 130px;
-
 
     &-container {
         display: grid;

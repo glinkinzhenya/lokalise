@@ -3,14 +3,14 @@
 
 .footer-secondary {
     display: flex;
-    border-top: 1px solid black;
+    border-top: 1px solid $color-primary;
     padding-top: 50px;
     padding-bottom: 45px;
     justify-content: space-between;
-@include xl {
-       padding-left: 20px;
-    }
 
+    @include xl {
+        padding-left: 20px;
+    }
 
     @include md {
         flex-direction: column;
@@ -22,9 +22,8 @@
     display: flex;
 
     @include md {
-            margin-bottom: 20px;
-        }
-    
+        margin-bottom: 20px;
+    }
 }
 
 .footer-contant {}
@@ -44,15 +43,16 @@
 
 .footer-secondary__copyright {
     padding-right: 80px;
+
     @include md {
         padding-right: 0px;
     }
- @include sm {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
 
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer-secondary__copyright-year {

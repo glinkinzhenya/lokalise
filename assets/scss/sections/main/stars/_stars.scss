@@ -2,13 +2,12 @@
 @use "../../../mixins" as *;
 
 .stars {
-    background-color: #dabc98;
+    background-color: $color-bg-brown;
     margin-bottom: 96px;
 
     @include md {
-margin-bottom: 10px;
+        margin-bottom: 10px;
     }
-
 
     &-container {
         display: flex;
@@ -33,12 +32,10 @@ margin-bottom: 10px;
     font-size: 35px;
     line-height: 50px;
     margin-left: 65px;
-
-
 }
 
 .stars-picture2 {
-    border-left: black solid 1px;
+    border-left: $color-primary solid 1px;
 
     @include xl {
         border: none;

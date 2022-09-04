@@ -6,8 +6,6 @@
     row-gap: $gap;
     padding-top: 128px;
     padding-bottom: 172px;
-    // margin-top: auto;
-    // margin-bottom: auto;
 
     @include xl-min {
         grid-template-areas: "ttl pic""dsc pic""act pic""nts pic";
@@ -25,7 +23,7 @@
     }
 
     @include sm {
-    padding-top: 60px;
+        padding-top: 60px;
         padding-bottom: 60px;
     }
 
@@ -44,7 +42,6 @@
             font-size: 45px;
 
         }
-
     }
 
     &__description {

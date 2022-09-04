@@ -2,7 +2,7 @@
 @use "../../../mixins" as *;
 
 .question {
-    background-color: #ff9c7d;
+    background-color: $color-bg-orange;
 
     &-block {
         display: flex;
@@ -23,7 +23,6 @@
             }
         }
 
-
         &__description {
             font-weight: 400;
             font-size: 20px;
@@ -31,7 +30,6 @@
             margin-bottom: 55px;
             text-align: center;
         }
-
 
         &__actions {
             font-weight: 600;

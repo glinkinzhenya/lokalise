@@ -537,7 +537,6 @@ a {
 .box-secondary__contant-description--md {
   max-width: 626px;
   margin-bottom: 5px;
-  padding-top: -9px;
 }
 .box-secondary__contant-action {
   padding-top: 30px;
@@ -759,7 +758,7 @@ a {
 }
 
 .stars-picture2 {
-  border-left: black solid 1px;
+  border-left: #000000 solid 1px;
 }
 
 .integrations {
@@ -876,7 +875,7 @@ a {
   padding-top: 50px;
   padding-bottom: 45px;
 
-  border-top: 1px solid black;
+  border-top: 1px solid #000000;
 }
 
 .footer-secondary__contant {

@@ -2,6 +2,6 @@
 @use '../../mixins' as *;
 
 .header-actions {
-display: flex;
-gap: $gap-sm;
+    display: flex;
+    gap: $gap-sm;
 }

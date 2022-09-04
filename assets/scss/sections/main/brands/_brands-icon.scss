@@ -5,10 +5,8 @@
     display: flex;
     margin-bottom: 88px;
     gap: 99px;
-
     flex-wrap: wrap;
- justify-content: center;
-  
+    justify-content: center;
 
     @include sm {
         margin-bottom: 50px;
