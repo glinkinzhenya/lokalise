@@ -8,8 +8,12 @@
     gap: 30px;
     padding-bottom: 190px;
 
+    @include sm {
+        padding-bottom: 60px;
+    }
+
     &--md {
-        
+
         min-height: 575px;
         padding-bottom: 150px;
 
@@ -42,11 +46,17 @@
             font-weight: 600;
             font-size: 50px;
             line-height: 60px;
-
-
             max-width: 488px;
             padding-left: 107px;
             padding-top: 191px;
+
+            @include lg {
+                max-width: none;
+            }
+
+            @include sm {
+            font-size: 40px;
+            }
 
             &--md {
                 padding-top: 106px;
@@ -54,7 +64,6 @@
 
             @include lg {
                 padding-top: 0px;
-
                 padding-left: 0px;
             }
         }
@@ -118,6 +127,11 @@
             background-color: $color-yellow;
             height: 575px;
             padding: 0 65px;
+
+            @include sm {
+                height: 400px;
+                    padding: 0 20px;
+                }
         }
 
 
@@ -126,11 +140,11 @@
             width: 100%;
 
             &--md {
-    // height: auto;
-    //     max-width: 100%;
+                // height: auto;
+                //     max-width: 100%;
 
                 // max-width: 500px;
-                
+
                 // padding-top: 65px;
 
             }

@@ -4,6 +4,10 @@
 .brands {
     background-color: #FF9C7D;
 
+    @include sm {
+            margin-bottom: 60px;
+        }
+
 
     &-container {
         display: flex;
