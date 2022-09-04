@@ -39,6 +39,7 @@
 }
 
 .footer-secondary__copyright {
+    padding-right: 80px;
     @include md {
         display: flex;
         flex-direction: column;

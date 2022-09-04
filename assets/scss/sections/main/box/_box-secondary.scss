@@ -2,50 +2,78 @@
 @use "../../../mixins" as *;
 
 .box-secondary {
-    min-height: 632px;
+    // min-height: 632px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-bottom: 190px;
+
+    &--md {
+        
+        min-height: 575px;
+        padding-bottom: 150px;
+
+        @include lg {
+            margin-bottom: 450px;
+        }
+    }
 
     @include lg {
         grid-auto-flow: initial;
         grid-template-columns: 1fr;
-        margin-bottom: 0px;
+        // margin-bottom: 0px;
     }
 
     @include sm {
-        margin-bottom: 0px;
+        // margin-bottom: 0px;
     }
 
     &__contant {
-        max-width: 493px;
+        // max-width: 493px;
 
         @include lg {
             text-align: center;
             margin-left: auto;
             margin-right: auto;
+            order: -1;
         }
 
         &-title {
-            padding-top: 160px;
-            max-width: 493px;
             font-weight: 600;
             font-size: 50px;
             line-height: 60px;
-            padding-left: 138px;
+
+
+            max-width: 488px;
+            padding-left: 107px;
+            padding-top: 191px;
+
+            &--md {
+                padding-top: 106px;
+            }
 
             @include lg {
-                padding-left: 0px;
                 padding-top: 0px;
+
+                padding-left: 0px;
             }
         }
 
         &-description {
-            max-width: 618px;
             font-weight: 400;
             font-size: 20px;
             line-height: 30px;
-            padding-left: 138px;
+            padding-top: 30px;
 
+            padding-left: 107px;
+            margin-bottom: 5px;
+            max-width: 555px;
+
+            &--md {
+                padding-top: -9px;
+                margin-bottom: 5px;
+                max-width: 626px;
+            }
 
             @include lg {
                 padding-left: 0px;
@@ -53,13 +81,23 @@
         }
 
         &-action {
-            padding-bottom: 160px;
+
             padding-top: 30px;
-            padding-left: 138px;
+            padding-bottom: 160px;
+            padding-left: 107px;
+
+            &--md {
+
+                padding-top: 22px;
+                padding-bottom: 123px;
+                ;
+
+            }
 
             @include lg {
                 padding-left: 0px;
                 padding-bottom: 40px;
+
             }
 
             &-button {
@@ -75,10 +113,31 @@
         justify-content: center;
         align-items: center;
 
+
+        &--md {
+            background-color: $color-yellow;
+            height: 575px;
+            padding: 0 65px;
+        }
+
+
+
         &-image {
+            width: 100%;
+
+            &--md {
+    // height: auto;
+    //     max-width: 100%;
+
+                // max-width: 500px;
+                
+                // padding-top: 65px;
+
+            }
+
             @include sm {
-                    max-width: 80%;
-                }
+                // max-width: 80%;
+            }
         }
 
     }

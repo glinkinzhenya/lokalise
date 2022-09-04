@@ -4,7 +4,8 @@
 .footer-primary {
     display: flex;
     gap: 70px;
-    padding-top: 100px;
+    padding-top: 52px;
+    margin-bottom: 2px;
 
     @include md {
         flex-wrap: wrap;
@@ -16,6 +17,7 @@
 
 .footer-primary__case {
     max-width: 300px;
+    margin-right: 70px;
 
     @include md {
         max-width: none;

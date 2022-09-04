@@ -5,8 +5,9 @@
    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 100px;
+    gap: 35px;
     padding-top: 20px;
+   
     @include xl {
         grid-template-columns: repeat(2, 1fr);
         }
@@ -36,6 +37,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
+    margin-bottom: 10px;
 }
 
 .footer-menu__block-action {}

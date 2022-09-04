@@ -8,7 +8,10 @@
     flex-direction: column;
 
     &__title {
-        text-align: center;
+        font-weight: 600;
+            font-size: 25px;
+            line-height: 35px;
+            text-align: center;
 
     }
 
@@ -19,5 +22,11 @@
 
     &__image {}
 
-    &__description {}
+    &__description {
+            font-size: 18px;
+            line-height: 25px;
+        
+            text-align: center;
+        
+    }
 }

@@ -9,8 +9,6 @@
     padding-bottom: $gap;
     gap: $gap;
 
-
-
     &::after {
         content: "";
         position: absolute;
@@ -30,7 +28,9 @@
         padding-right: $gap-sm;
     }
 
-    &__navbar {}
+    &__navbar {
+        
+    }
 
     &__actions {
         margin-left: auto;

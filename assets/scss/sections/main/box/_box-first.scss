@@ -3,10 +3,11 @@
 
 
 .box-first {
-    min-height: 632px;
+    // min-height: 632px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 207px;
 
     @include lg {
         grid-auto-flow: initial;
@@ -15,10 +16,11 @@
 
     @include sm {
         margin-bottom: 100px;
+
     }
 
     &__contant {
-        max-width: 493px;
+        // max-width: 493px;
 
         @include lg {
             text-align: center;
@@ -27,13 +29,17 @@
         }
 
         &-title {
-            padding-top: 160px;
             font-weight: 600;
             font-size: 50px;
             line-height: 60px;
 
+            padding-top: 150px;
+
+
             @include sm {
                 padding-top: 0;
+
+                font-size: 40px;
             }
         }
 
@@ -41,6 +47,7 @@
             font-weight: 400;
             font-size: 20px;
             line-height: 30px;
+            padding-top: 30px;
         }
 
         &-action {
@@ -60,12 +67,14 @@
         justify-content: center;
         align-items: center;
 
-       
+
 
         &-image {
+            width: 100%;
+
             @include sm {
-                    max-width: 80%;
-                }
+                max-width: 80%;
+            }
         }
     }
 }

@@ -22,20 +22,22 @@
     flex-direction: column;
 
     @include md {
-          text-align: center;
-          padding-bottom: 40px;
-        }
+        text-align: center;
+        padding-bottom: 40px;
+    }
 
 
     &__title {
         font-weight: 600;
-        font-size: 50px;
-        line-height: 60px;
-        padding-top: 50px;
+        font-size: 30px;
+        line-height: 40px;
+        // padding-top: 50px;
+        margin: 30px 0 10px 0;
+
 
         @include md {
-                padding: 0px;
-            }
+            padding: 0px;
+        }
     }
 
     &__picture {
@@ -47,21 +49,19 @@
 
 
     &__description {
-        font-family: 'Graphik LC TT';
-        font-style: normal;
-        font-weight: 400;
         font-size: 20px;
         line-height: 30px;
-        padding-right: 20px;
+        max-width: 410px;
     }
 
 
 
-    &__actions {}
+    &__actions {
+        margin-top: 8px;
+    }
 }
 
 .teams-box__botton {
-    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     text-decoration-line: underline;

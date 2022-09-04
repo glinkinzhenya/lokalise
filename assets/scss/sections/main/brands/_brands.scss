@@ -13,6 +13,10 @@
         max-width: 1330px;
         padding-left: 20px;
         padding-right: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 90px;
+        
+        @include sm {
+            margin-bottom: 10px;
+        }
     }
 }

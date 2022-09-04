@@ -3,10 +3,16 @@
 
 .header-navbar {
     &__list {
-        @include unlist;
         display: flex;
+        align-items: center;
+        justify-content: center;
         column-gap: $gap;
         flex-wrap: wrap;
+        @include unlist;
+
+        @include md {
+            justify-content: center;
+        }
     }
 
     &__item {}
