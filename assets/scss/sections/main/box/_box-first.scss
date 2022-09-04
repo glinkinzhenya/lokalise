@@ -19,6 +19,7 @@
     }
 
     &__contant {
+        max-width: 496px;
 
         @include lg {
             text-align: center;
@@ -75,9 +76,9 @@
             width: 100%;
         }
 
-        @include lg{
+        @include lg {
             width: 80%;
-            margin:0 auto;
+            margin: 0 auto;
         }
     }
 }

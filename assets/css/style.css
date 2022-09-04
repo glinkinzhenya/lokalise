@@ -459,6 +459,9 @@ a {
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
 }
+.box-first__contant {
+  max-width: 496px;
+}
 .box-first__contant-title {
   padding-top: 150px;
 
